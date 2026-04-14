@@ -5,7 +5,7 @@ from typing import List
 
 class MaridaImageProcessor:
     """
-    Procesare imaginilor din setul de date MARIDA: filtrare, taiere în grid ai salvare organizată pe disc.
+    Procesare imaginilor din setul de date MARIDA: taiere in grid si salvare organizata pe disc
     """
 
     def __init__(self, root_dir: str, grid_size: int = 4):
@@ -73,7 +73,6 @@ class MaridaImageProcessor:
 
                     count += 1
 
-            # Afișăm progresul conform cerinței
             print(f"[{idx + 1}/{total_images}] Procesat: {img_folder_name}")
             print(f"  Generat: {count} patch-uri | Rezoluție patch: {p_w}x{p_h} pixeli")
 
